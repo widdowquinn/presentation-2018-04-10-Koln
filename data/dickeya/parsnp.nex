@@ -1,0 +1,147 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=45;
+	taxlabels
+	'1661.fna'
+	'2168.fna'
+	'2211.fna'
+	'2846.fna'
+	'3231.fna'
+	'3232.fna'
+	'3414.fna'
+	'3698.fna'
+	'4441.fna'
+	'5163.fna'
+	'5211.fna'
+	'5297.fna'
+	'5535.fna'
+	'5692.fna'
+	'6146.fna'
+	'6272.fna'
+	'7159.fna'
+	'7383.fna'
+	'DM10-09.fna'
+	'DM11-07.fna'
+	'DM151-09.fna'
+	'DM174-09.fna'
+	'DM240-10.fna'
+	'DM359-10.fna'
+	'DM36-09.fna'
+	'DM406-10.fna'
+	'DM48-09.fna'
+	'DM91-09.fna'
+	'DM94-09.fna'
+	'DM96-10.fna'
+	'GCF_000011605.1_ASM1160v1_genomic.fna'
+	'GCF_000389755.1_Pa6276v1.0_genomic.fna'
+	'GCF_000696465.1_ASM69646v1_genomic.fna'
+	'GCF_000740965.1_ASM74096v1_genomic.fna'
+	'GCF_000740965.1_ASM74096v1_genomic.gbk.fna'
+	'GCF_000749905.1_ASM74990v1_genomic.fna'
+	'GCF_000749965.1_ASM74996v1_genomic.fna'
+	'GCF_001038685.1_ASM103868v1_genomic.fna'
+	'P1-G10-STr.fna'
+	'P1-O15-STs.fna'
+	'P2-O23-STr.fna'
+	'P6-D4-STs.fna'
+	'P7-B26-STr.fna'
+	'SCRI-1039-strep-res.fna'
+	'SCRI-1039.fna'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((('4441.fna'[&!color=#e38100]:0.01717,'P1-O15-STs.fna'[&!color=#e38100]:0.05409)[&label=1.0,!color=#e38100]:0.00403,('7383.fna'[&!color=#e38100]:0.00486,'GCF_000389755.1_Pa6276v1.0_genomic.fna'[&!color=#e38100]:0.05596)[&label=0.79,!color=#e38100]:1.1E-4)[&label=1.0,!color=#e38100]:0.0,('2168.fna'[&!color=#e38100]:0.0269,('GCF_000749965.1_ASM74996v1_genomic.fna'[&!color=#e38100]:0.19809,('1661.fna'[&!color=#e38100]:1.9E-4,'P6-D4-STs.fna'[&!color=#e38100]:2.1E-4)[&label=1.0,!color=#e38100]:0.02748)[&label=1.0,!color=#e38100]:0.00748)[&label=0.99,!color=#e38100]:4.1E-4,('DM11-07.fna'[&!color=#e38100]:0.00371,(((('DM36-09.fna'[&!color=#e38100]:0.02862,((('5297.fna'[&!color=#6bcf6b]:0.00974,('GCF_000011605.1_ASM1160v1_genomic.fna'[&!color=#6bcf6b]:0.24902,'DM48-09.fna'[&!color=#6bcf6b]:0.06269)[&label=1.0,!color=#6bcf6b]:0.10627)[&label=1.0,!color=#6bcf6b]:0.25684,('6146.fna'[&!color=#6dcacf]:1.6E-4,('DM240-10.fna'[&!color=#6dcacf]:1.4E-4,((((('2846.fna'[&!color=#6dcacf]:0.01407,('7159.fna'[&!color=#6dcacf]:0.02109,('GCF_000740965.1_ASM74096v1_genomic.gbk.fna'[&!color=#6dcacf]:1.2E-4,'GCF_000740965.1_ASM74096v1_genomic.fna'[&!color=#6dcacf]:0.0)[&label=1.0,!color=#6dcacf]:2.9E-4)[&label=0.88,!color=#6dcacf]:6.0E-5)[&label=0.94,!color=#6dcacf]:0.0,('GCF_000696465.1_ASM69646v1_genomic.fna'[&!color=#6dcacf]:6.5E-4,('2211.fna'[&!color=#6dcacf]:2.2E-4,'3232.fna'[&!color=#6dcacf]:0.0095)[&label=1.0,!color=#6dcacf]:0.00469)[&label=0.24,!color=#6dcacf]:4.0E-5)[&label=1.0,!color=#6dcacf]:0.00816,'DM10-09.fna'[&!color=#6dcacf]:0.00813)[&label=0.71,!color=#6dcacf]:0.0,'3698.fna'[&!color=#6dcacf]:2.7E-4)[&label=0.91,!color=#6dcacf]:4.0E-5,'DM174-09.fna'[&!color=#6dcacf]:2.1E-4)[&label=0.53,!color=#6dcacf]:5.0E-5)[&label=1.0,!color=#6dcacf]:0.02046)[&label=1.0,!color=#6dcacf]:0.07664)[&label=1.0]:0.18529,(('3414.fna'[&!color=#cf00cb]:1.6E-4,'DM94-09.fna'[&!color=#cf00cb]:3.0E-4)[&label=0.99,!color=#cf00cb]:7.9E-4,((('SCRI-1039.fna'[&!color=#cf00cb]:3.1E-4,(('P1-G10-STr.fna'[&!color=#cf00cb]:5.8E-4,('SCRI-1039-strep-res.fna'[&!color=#cf00cb]:6.0E-5,'P7-B26-STr.fna'[&!color=#cf00cb]:0.01705)[&label=0.89,!color=#cf00cb]:6.0E-5)[&label=0.85,!color=#cf00cb]:5.0E-5,'P2-O23-STr.fna'[&!color=#cf00cb]:1.2E-4)[&label=0.94,!color=#cf00cb]:1.5E-4)[&label=1.0,!color=#cf00cb]:2.4E-4,('3231.fna'[&!color=#cf00cb]:0.03427,'DM151-09.fna'[&!color=#cf00cb]:0.05963)[&label=1.0,!color=#cf00cb]:0.0)[&label=1.0,!color=#cf00cb]:0.00213,(('5692.fna'[&!color=#cf00cb]:0.02621,('DM359-10.fna'[&!color=#cf00cb]:0.00337,'DM96-10.fna'[&!color=#cf00cb]:0.00163)[&label=1.0,!color=#cf00cb]:0.00168)[&label=1.0,!color=#cf00cb]:0.01536,('6272.fna'[&!color=#cf00cb]:0.07155,('GCF_000749905.1_ASM74990v1_genomic.fna'[&!color=#cf00cb]:6.5E-4,'GCF_001038685.1_ASM103868v1_genomic.fna'[&!color=#cf00cb]:2.0E-4)[&label=1.0,!color=#cf00cb]:0.05742)[&label=1.0,!color=#cf00cb]:0.01332)[&label=1.0,!color=#cf00cb]:0.00721)[&label=1.0,!color=#cf00cb]:0.01709)[&label=1.0,!color=#cf00cb]:0.04587)[&label=1.0,!color=#e38100]:0.05354)[&label=1.0,!color=#e38100]:0.00383,('5163.fna'[&!color=#e38100]:4.0E-5,'5211.fna'[&!color=#e38100]:2.1E-4)[&label=1.0,!color=#e38100]:0.06282)[&label=1.0,!color=#e38100]:0.00261,('5535.fna'[&!color=#e38100]:0.00147,'DM91-09.fna'[&!color=#e38100]:5.4E-4)[&label=0.98,!color=#e38100]:1.4E-4)[&label=0.63,!color=#e38100]:1.0E-5,'DM406-10.fna'[&!color=#e38100]:3.1E-4)[&label=0.79,!color=#e38100]:1.0E-5)[&label=0.87,!color=#e38100]:0.0);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

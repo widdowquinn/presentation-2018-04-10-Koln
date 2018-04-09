@@ -1,0 +1,100 @@
+from,to,weight
+Erwinia,Genomotype 'genus' 5,2
+Erwinia,Genomotype 'genus' 13,2
+Erwinia,Genomotype 'genus' 11,1
+Erwinia,Genomotype 'genus' 2,20
+Dickeya,Genomotype 'genus' 6,46
+Erwinia,Genomotype 'genus' 1,1
+Erwinia,Genomotype 'genus' 8,1
+Erwinia,Genomotype 'genus' 3,1
+Dickeya,Genomotype 'genus' 12,2
+Pectobacterium,Genomotype 'genus' 4,57
+Erwinia,Genomotype 'genus' 16,1
+Erwinia,Genomotype 'genus' 10,2
+Erwinia,Genomotype 'genus' 7,2
+Erwinia,Genomotype 'genus' 14,1
+Erwinia,Genomotype 'genus' 17,1
+Dickeya,Genomotype 'genus' 15,2
+Erwinia,Genomotype 'genus' 9,1
+Genomotype 'genus' 12,Dickeya paradisiaca,2
+Genomotype 'genus' 2,Erwinia pyrifoliae,2
+Genomotype 'genus' 2,Erwinia sp.,1
+Genomotype 'genus' 6,Dickeya chrysanthemi,6
+Genomotype 'genus' 7,Erwinia iniecta,2
+Genomotype 'genus' 15,Dickeya aquatica,2
+Genomotype 'genus' 10,Erwinia billingiae,2
+Genomotype 'genus' 4,Pectobacterium carotovorum subsp. odoriferum,3
+Genomotype 'genus' 6,Dickeya sp.,7
+Genomotype 'genus' 4,Pectobacterium carotovorum,2
+Genomotype 'genus' 6,Dickeya solani,13
+Genomotype 'genus' 4,Pectobacterium betavasculorum,2
+Genomotype 'genus' 16,Erwinia sp.,1
+Genomotype 'genus' 4,Pectobacterium wasabiae,6
+Genomotype 'genus' 9,Erwinia typographi,1
+Genomotype 'genus' 2,Erwinia amylovora,15
+Genomotype 'genus' 4,Pectobacterium sp.,1
+Genomotype 'genus' 13,Erwinia oleae,1
+Genomotype 'genus' 17,Erwinia sp.,1
+Genomotype 'genus' 13,Erwinia sp.,1
+Genomotype 'genus' 2,Erwinia tasmaniensis,1
+Genomotype 'genus' 6,Dickeya zeae,10
+Genomotype 'genus' 14,Erwinia toletana,1
+Genomotype 'genus' 4,Pectobacterium carotovorum subsp. carotovorum,17
+Genomotype 'genus' 3,Erwinia gerundensis,1
+Genomotype 'genus' 11,Erwinia mallotivora,1
+Genomotype 'genus' 6,Dickeya dianthicola,6
+Genomotype 'genus' 4,Pectobacterium carotovorum subsp. actinidae,1
+Genomotype 'genus' 2,Erwinia piriflorinigrans,1
+Genomotype 'genus' 6,Dickeya dadantii,4
+Genomotype 'genus' 4,Pectobacterium atrosepticum,7
+Genomotype 'genus' 5,Erwinia tracheiphila,2
+Genomotype 'genus' 1,Erwinia persicina,1
+Genomotype 'genus' 4,Pectobacterium carotovorum subsp. brasiliense,18
+Genomotype 'genus' 8,Erwinia sp.,1
+Pectobacterium betavasculorum,Genomotype 'species' 20,2
+Erwinia sp.,Genomotype 'species' 39,1
+Pectobacterium wasabiae,Genomotype 'species' 4,3
+Pectobacterium carotovorum subsp. carotovorum,Genomotype 'species' 29,1
+Erwinia sp.,Genomotype 'species' 36,1
+Erwinia mallotivora,Genomotype 'species' 24,1
+Dickeya zeae,Genomotype 'species' 18,5
+Dickeya sp.,Genomotype 'species' 15,4
+Pectobacterium carotovorum,Genomotype 'species' 32,1
+Erwinia gerundensis,Genomotype 'species' 3,1
+Dickeya dadantii,Genomotype 'species' 14,4
+Dickeya solani,Genomotype 'species' 15,1
+Pectobacterium carotovorum subsp. odoriferum,Genomotype 'species' 25,3
+Dickeya aquatica,Genomotype 'species' 35,2
+Pectobacterium carotovorum subsp. brasiliense,Genomotype 'species' 13,18
+Pectobacterium wasabiae,Genomotype 'species' 23,3
+Erwinia piriflorinigrans,Genomotype 'species' 38,1
+Erwinia sp.,Genomotype 'species' 12,1
+Dickeya sp.,Genomotype 'species' 26,1
+Erwinia oleae,Genomotype 'species' 31,1
+Dickeya solani,Genomotype 'species' 11,12
+Erwinia tasmaniensis,Genomotype 'species' 37,1
+Pectobacterium atrosepticum,Genomotype 'species' 33,7
+Dickeya sp.,Genomotype 'species' 28,1
+Pectobacterium carotovorum subsp. carotovorum,Genomotype 'species' 22,2
+Dickeya dianthicola,Genomotype 'species' 16,6
+Dickeya zeae,Genomotype 'species' 7,5
+Pectobacterium carotovorum subsp. actinidae,Genomotype 'species' 10,1
+Erwinia tracheiphila,Genomotype 'species' 5,2
+Erwinia persicina,Genomotype 'species' 1,1
+Pectobacterium carotovorum,Genomotype 'species' 22,1
+Dickeya paradisiaca,Genomotype 'species' 27,2
+Pectobacterium carotovorum subsp. carotovorum,Genomotype 'species' 13,5
+Dickeya chrysanthemi,Genomotype 'species' 15,1
+Erwinia typographi,Genomotype 'species' 19,1
+Dickeya chrysanthemi,Genomotype 'species' 8,5
+Dickeya sp.,Genomotype 'species' 16,1
+Erwinia amylovora,Genomotype 'species' 6,15
+Erwinia iniecta,Genomotype 'species' 9,2
+Erwinia toletana,Genomotype 'species' 34,1
+Erwinia billingiae,Genomotype 'species' 21,2
+Pectobacterium carotovorum subsp. carotovorum,Genomotype 'species' 17,8
+Pectobacterium carotovorum subsp. carotovorum,Genomotype 'species' 30,1
+Erwinia sp.,Genomotype 'species' 31,1
+Erwinia sp.,Genomotype 'species' 2,1
+Erwinia pyrifoliae,Genomotype 'species' 2,2
+Pectobacterium sp.,Genomotype 'species' 4,1

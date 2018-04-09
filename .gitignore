@@ -1,0 +1,4 @@
+# Exclude R project hidden files
+.RData
+.Rhistory
+.Rproj.user/
