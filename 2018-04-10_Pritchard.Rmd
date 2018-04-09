@@ -195,7 +195,7 @@ SECTION 1: The Hutton
 - also: Glenshaugh, Balruddery, Hartwood
 - oversees Biomathematics and Biostatistics Scotland (BioSS)
 - University of Dundee Division of Plant Sciences based at Dundee site
-- **applied focus (policy)**
+- <div class="attention">**applied focus (policy)**</div>
 
 <p>
 <img src="images/jhi_locations.png" height="450px">
@@ -204,17 +204,6 @@ SECTION 1: The Hutton
 
 <div class="references">
 - [Hutton Highlights, February 2018](http://www.hutton.ac.uk/sites/default/files/files/publications/e-magazine/HuttonHighlightsFebruary2018/index.html)
-</div>
-
-
-## ICS Hutton
-
-<center>
-<img src="images/ics_concept_map.png" height="500px">
-</center>
-
-<div class="highlight">
-Twitter: [`@huttonics`](https://twitter.com/huttonics?lang=en)
 </div>
 
 
@@ -343,7 +332,7 @@ SECTION 3: Blueprints?
 >    synonyms:	plan, design, diagram, map, layout, representation
 
 <div class="highlight">
-**A genome can be a static parts list or plan: *a blueprint***
+**A pathogen's genome can be a static parts list or plan: *a blueprint***
 </div>
 
 <center>
@@ -416,7 +405,7 @@ SECTION 3: Blueprints?
 - *zero tolerance* policy for all *Dickeya* spp. on potatoes in Scotland to ensure production of `clean' (disease-free) seed potato production for export
 </div>
 
-- Requirea a quick, cheap, scalable, preferably on-site, test (qPCR)
+- Require a quick, cheap, scalable, preferably on-site, test (qPCR)
 
 <img src="images/logo_euphresco.png" height="100px" /><br />consortium for control and epidemiology
 
@@ -607,11 +596,11 @@ shinyApp(
 **16S central to microbial ecology** (microbiome) **and identification**
 
 - universal, essential structural RNA - low variation
-- all 16S metabarcoding methods rely on reference databases
+- all 16S metabarcoding methods rely on reference databases/genomes
 </div>
 
 - bacteria commonly have several repeated very similar copies
-- 16S does not assemble well: most published genomes collapse 16S
+- 16S does not assemble well: many published genomes collapse 16S
 
 <center>
 <img src="images/16s_metabarcoding.jpg" height="300px" />
@@ -650,7 +639,7 @@ shinyApp(
 ## riboSeed Performance
 
 <div class="attention">
-**hybrid (PacBio/Illumina assembly reference)**
+**hybrid (PacBio/Illumina assembly reference): 4x rDNA**
 
 - Illumina-only *de novo* asm: 1/4; *de fere novo* riboSeed asm: 4/4
 - 9 SNPs with respect to hybrid assembly (128 SNPs in reference)
@@ -698,7 +687,7 @@ SECTION 4: Recipes?
 ## How do pathogens infect?
 
 <div class="highlight">
-**complex parts lists are the **what**, not the *how* - systems biology needed**
+**complex parts lists are the *what*, not the *how* - systems biology needed**
 </div>
 
 <center>
@@ -709,16 +698,6 @@ SECTION 4: Recipes?
 - [Block *et al.* (2008) *Curr. Op. Plant Biol.* doi:10.1016/j.pbi.2008.06.007](https://dx.doi.org/10.1016/j.pbi.2008.06.007) - plant-bacterium interactions
 </div>
 
-
-## Flying (for a biologist?)
-
-<div class="highlight">
-Engineering and model-based thinking works better than some other approaches…
-</div>
-
-<center>
-<img src="images/biomechanistic-airplane-model.jpg" height="450px">
-</center>
 
 ## Models Guide Thinking
 
@@ -754,6 +733,7 @@ Quantitative, specific timescales and molecular interactions
 
 <div class="references">
 - [Pritchard & Birch (2014) *Mol. Plant Pathol.* doi:10.1111/mpp.12210](http://dx.doi.org/10.1111/mpp.12210): Dynamic model of plant-pathogen interaction
+- [BIOMD0000000563](https://www.ebi.ac.uk/biomodels-main/BIOMD0000000563): model at BIOMODELS
 </div>
 
 
@@ -863,7 +843,7 @@ SECTION 5: Opportunities?
 >    "career opportunities in our New York headquarters""
 
 <div class="highlight">
-**Plant pathogen genomes are opportunities for new technology, and for intervention to prevent disease**
+**Plant pathogen genomes are opportunities for developing new technologies, and for intervention to prevent disease**
 </div>
 
 # 5a. Synthetic Biology
@@ -1347,3 +1327,29 @@ SECTION 6: Conclusions
 <img src="images/acknowledgements.png" height="500px">
 </center>
 
+<!--
+SECTION 7: Unused slides
+-->
+
+# 7. Appendix
+
+## ICS Hutton
+
+<center>
+<img src="images/ics_concept_map.png" height="500px">
+</center>
+
+<div class="highlight">
+Twitter: [`@huttonics`](https://twitter.com/huttonics?lang=en)
+</div>
+
+
+## Flying (for a biologist?)
+
+<div class="highlight">
+Engineering and model-based thinking works better than some other approaches…
+</div>
+
+<center>
+<img src="images/biomechanistic-airplane-model.jpg" height="450px">
+</center>
