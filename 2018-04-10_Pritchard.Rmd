@@ -340,29 +340,6 @@ SECTION 3: Blueprints?
 </center>
 
 
-## Parts lists are useful
-
-<div class="col2">
-
-- Gene or pathway presence/absence implies functional and/or phenotypic differences
-  - differences in pathogenicity/virulence
-  - taxonomic markers (16S, ITS1, VNTR, MLST)
-<p>
-<center>
-<img src="images/gd_circular.png" width="100%" />
-</center>
-</p>
-</div>
-
-<div class="attention">
-**markers identify (latently) infected material for quarantine or destruction**
-</div>
-
-<div class="references">
-- [Pritchard *et al.* (2006) *Bioinformatics* doi:10.1093/bioinformatics/btk021](https://dx.doi.org/10.1093/bioinformatics/btk021) - `GenomeDiagram` genome visualisation
-- [Holden *et al.* (2009) *FEMS Microbiol. Rev.* doi:10.1111/j.1574-6976.2008.00153.x](https://dx.doi.org/10.1111/j.1574-6976.2008.00153.x) - comparative genomics of plant pathogens
-</div>
-
 # 3a. Diagnostics
 
 ## Diagnostics & Classification
@@ -431,45 +408,6 @@ SECTION 3: Blueprints?
 </div>
 
 
-## Historical Taxonomy
-
-- *Erwinia* revised ≈1953 (*Pectobacterium*), ≈2003-2005 (*Dickeya*)
-
-<center>
-```{r sre_taxonomy, echo=FALSE}
-shinyApp(
-  ui = fluidPage(
-         fluidRow(column=12,
-          htmlOutput("Sankey")
-         )
-       ),
-  server = function(input, output) {
-    output$Sankey = renderGvis({
-      gvisSankey(sretaxdata,
-                 from='origin', to='renamed',
-                 weight='weights',
-                 options=list(height=400, width=900,
-                              sankey="{
-                                link: { color: { fill: '#e8aabf',
-                                                 fillOpacity: 0.7} },
-                                        node: { colors: [ '#a61d4c' ],
-                                                label: {fontSize: 10,
-                                                        italic: true,
-                                                        color: '#871b47'}} 
-                                      }")
-                            )
-    })
-  }
-)
-```
-</center>
-
-<div class="references">
-- [Gardan *et al.* (2003) *Int. J. Sys. Microbiol.* doi:10.1099/ijs.0.02423-0](https://dx.doi.org/10.1099/ijs.0.02423-0) - SRE reclassification
-- [Samson *et al.* (2005) *Int. J. Sys. Microbiol.* doi:10.1099/ijs.0.02791-0](https://dx.doi.org/10.1099/ijs.0.02791-0) - SRE reclassification
-</div>
-
-
 ## Consequences of Misclassification
 
 <div class="attention">
@@ -515,6 +453,7 @@ shinyApp(
 - include/exclude genomic regions
 - diagnostic primers/metagenomic markers
 - `pdp` parallelises under SGE/OGE
+- open source, free software
 
 <p>
 <img src="images/find_differential_primers.png" width="100%" />
@@ -596,11 +535,13 @@ shinyApp(
 **16S central to microbial ecology** (microbiome) **and identification**
 
 - universal, essential structural RNA - low variation
-- all 16S metabarcoding methods rely on reference databases/genomes
 </div>
 
-- bacteria commonly have several repeated very similar copies
-- 16S does not assemble well: many published genomes collapse 16S
+<div class="attention">
+- bacteria commonly have **several repeated very similar copies**
+- all 16S metabarcoding methods rely on reference databases/genomes
+- 16S does not assemble well: many **published genomes collapse 16S**
+</div>
 
 <center>
 <img src="images/16s_metabarcoding.jpg" height="300px" />
@@ -641,7 +582,7 @@ shinyApp(
 <div class="attention">
 **hybrid (PacBio/Illumina assembly reference): 4x rDNA**
 
-- Illumina-only *de novo* asm: 1/4; *de fere novo* riboSeed asm: 4/4
+- Illumina-only - *de novo* asm: 1/4; *de fere novo* riboSeed asm: 4/4
 - 9 SNPs with respect to hybrid assembly (128 SNPs in reference)
 
 **riboSeed enables closed scaffold of Illumina-only *Staphylococcus aureus* UAM-1 draft genome**
@@ -846,99 +787,7 @@ SECTION 5: Opportunities?
 **Plant pathogen genomes are opportunities for developing new technologies, and for intervention to prevent disease**
 </div>
 
-# 5a. Synthetic Biology
-
-## IBioIC funded studentship
-
-<div class="col2">
-- **Eirini Xemantilotou**
-- Tracey Gloster
-- Sean Chapman
-
-<p>
-<img src="images/person_eirini_xemantilotou.jpg" height="150px">
-<img src="images/person_tracey_gloster.jpg" height="150px">
-<img src="images/person_sean_chapman.jpg" height="150px">
-</p>
-</div>
-
-<div class="highlight">
-- IBioIC: Industrial Biotechnology Innovation Centre
-- University of St Andrews
-</div>
-
-<div class="footer">
-<img src="images/logo_ibioic.png" height="75px">
-<img src="images/logo_uosta.png" height="75px">
-</div>
-
-## Food or Fuel?
-
-<div class="highlight">
-- 1st generation: fuel from food crops 
-- 2nd generation: fuel from cellulosic crops, agricultural residue
-</div>
-
-<center>
-<img src="images/cartoon_food_or_fuel_large.png" height="400px">
-</center>
-
-<div class="references">
-- [Mohr & Rahman et al. (2013) Energy Policy doi:10.1016/j.enpol.2013.08.033](https://dx.doi.org/10.1016/j.enpol.2013.08.033)
-</div>
-
-
-## Exploiting natural diversity
-
-<div class="attention">
-**exploit natural diversity of pathogen cell wall degrading enzymes**
-</div>
-
-<center>
-<img src="images/ibioic_generate_diversity.png" height="350px">
-</center>
-
-<div class="highlight">
-- new enzymes to degrade intractable plant material
-- PCWDE libraries for synthetic biology platforms
-- protein structure-function insight
-</div>
-
-
-## Screening for 'Evolvability'
-
-<div class="highlight">
-- scrape CAZy for plant pathogen enzyme IDs
-- identify homologues, putative orthologues
-- **positive selection $\implies$ 'evolvability'**
-</div>
-
-<center>
-<img src="images/ibioic_positive_selection.png" width="45%">
-<img src="images/ibioic_ranking.png" width="45%">
-</center>
-
-<div class="attention">
-**currently testing initial candidate enzyme set**
-</div>
-
-
-## Directed Evolution
-
-<div class="attention">
-- generate novel diversity, select for substrate specificity
-</div>
-
-<center>
-<img src="images/ibioic_gene_shuffling.gif" height="450px">
-</center>
-
-<div class="references">
-- [Crameri *et al.* (1998) *Nature* doi:10.1038/34663](https://dx.doi.org/10.1038/34663)
-</div>
-
-
-# 5b. Taxonomic classification
+# 5a. Taxonomic classification
 
 ## Consequences of Misclassification
 
@@ -954,7 +803,7 @@ SECTION 5: Opportunities?
 </div>
 
 <div class="attention">
-**≈18% of genomes in public databases misclassified by species**
+**≈18% of genomes in public databases misclassified at species level**
 </div>
 
 - accurate classifications essential for diagnostics training
@@ -1003,6 +852,7 @@ SECTION 5: Opportunities?
 - ANIm, ANIb etc.
 - calculates, visualises, (soon) classifies
 - parallelises under SGE/OGE
+- open source, free software
 
 <p>
 <img src="images/pyani_github_page.png" width="100%" />
@@ -1344,6 +1194,70 @@ Twitter: [`@huttonics`](https://twitter.com/huttonics?lang=en)
 </div>
 
 
+## Parts lists are useful
+
+<div class="col2">
+
+- Gene or pathway presence/absence implies functional and/or phenotypic differences
+  - differences in pathogenicity/virulence
+  - taxonomic markers (16S, ITS1, VNTR, MLST)
+<p>
+<center>
+<img src="images/gd_circular.png" width="100%" />
+</center>
+</p>
+</div>
+
+<div class="attention">
+**markers identify (latently) infected material for quarantine or destruction**
+</div>
+
+<div class="references">
+- [Pritchard *et al.* (2006) *Bioinformatics* doi:10.1093/bioinformatics/btk021](https://dx.doi.org/10.1093/bioinformatics/btk021) - `GenomeDiagram` genome visualisation
+- [Holden *et al.* (2009) *FEMS Microbiol. Rev.* doi:10.1111/j.1574-6976.2008.00153.x](https://dx.doi.org/10.1111/j.1574-6976.2008.00153.x) - comparative genomics of plant pathogens
+</div>
+
+
+## Historical Taxonomy
+
+- *Erwinia* revised ≈1953 (*Pectobacterium*), ≈2003-2005 (*Dickeya*)
+
+<center>
+```{r sre_taxonomy, echo=FALSE}
+shinyApp(
+  ui = fluidPage(
+         fluidRow(column=12,
+          htmlOutput("Sankey")
+         )
+       ),
+  server = function(input, output) {
+    output$Sankey = renderGvis({
+      gvisSankey(sretaxdata,
+                 from='origin', to='renamed',
+                 weight='weights',
+                 options=list(height=400, width=900,
+                              sankey="{
+                                link: { color: { fill: '#e8aabf',
+                                                 fillOpacity: 0.7} },
+                                        node: { colors: [ '#a61d4c' ],
+                                                label: {fontSize: 10,
+                                                        italic: true,
+                                                        color: '#871b47'}} 
+                                      }")
+                            )
+    })
+  }
+)
+```
+</center>
+
+<div class="references">
+- [Gardan *et al.* (2003) *Int. J. Sys. Microbiol.* doi:10.1099/ijs.0.02423-0](https://dx.doi.org/10.1099/ijs.0.02423-0) - SRE reclassification
+- [Samson *et al.* (2005) *Int. J. Sys. Microbiol.* doi:10.1099/ijs.0.02791-0](https://dx.doi.org/10.1099/ijs.0.02791-0) - SRE reclassification
+</div>
+
+
+
 ## Flying (for a biologist?)
 
 <div class="highlight">
@@ -1353,3 +1267,95 @@ Engineering and model-based thinking works better than some other approaches…
 <center>
 <img src="images/biomechanistic-airplane-model.jpg" height="450px">
 </center>
+
+
+# 5a. Synthetic Biology
+
+## IBioIC funded studentship
+
+<div class="col2">
+- **Eirini Xemantilotou**
+- Tracey Gloster
+- Sean Chapman
+
+<p>
+<img src="images/person_eirini_xemantilotou.jpg" height="150px">
+<img src="images/person_tracey_gloster.jpg" height="150px">
+<img src="images/person_sean_chapman.jpg" height="150px">
+</p>
+</div>
+
+<div class="highlight">
+- IBioIC: Industrial Biotechnology Innovation Centre
+- University of St Andrews
+</div>
+
+<div class="footer">
+<img src="images/logo_ibioic.png" height="75px">
+<img src="images/logo_uosta.png" height="75px">
+</div>
+
+## Food or Fuel?
+
+<div class="highlight">
+- 1st generation: fuel from food crops 
+- 2nd generation: fuel from cellulosic crops, agricultural residue
+</div>
+
+<center>
+<img src="images/cartoon_food_or_fuel_large.png" height="400px">
+</center>
+
+<div class="references">
+- [Mohr & Rahman et al. (2013) Energy Policy doi:10.1016/j.enpol.2013.08.033](https://dx.doi.org/10.1016/j.enpol.2013.08.033)
+</div>
+
+
+## Exploiting natural diversity
+
+<div class="attention">
+**exploit natural diversity of pathogen cell wall degrading enzymes**
+</div>
+
+<center>
+<img src="images/ibioic_generate_diversity.png" height="350px">
+</center>
+
+<div class="highlight">
+- new enzymes to degrade intractable plant material
+- PCWDE libraries for synthetic biology platforms
+- protein structure-function insight
+</div>
+
+
+## Screening for 'Evolvability'
+
+<div class="highlight">
+- scrape CAZy for plant pathogen enzyme IDs
+- identify homologues, putative orthologues
+- **positive selection $\implies$ 'evolvability'**
+</div>
+
+<center>
+<img src="images/ibioic_positive_selection.png" width="45%">
+<img src="images/ibioic_ranking.png" width="45%">
+</center>
+
+<div class="attention">
+**currently testing initial candidate enzyme set**
+</div>
+
+
+## Directed Evolution
+
+<div class="attention">
+- generate novel diversity, select for substrate specificity
+</div>
+
+<center>
+<img src="images/ibioic_gene_shuffling.gif" height="450px">
+</center>
+
+<div class="references">
+- [Crameri *et al.* (1998) *Nature* doi:10.1038/34663](https://dx.doi.org/10.1038/34663)
+</div>
